@@ -11,8 +11,8 @@ import { Age } from './js/galacticAge.js';
 $(document).ready(function() {
   $(form).submit(function(event) {
     let age = new Age();
-    debugger;
-    let galacticAge = age.main();
+    const report = age.main();
+    $("#info").text(report);
     event.preventDefault();
   });
 });

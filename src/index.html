@@ -7,13 +7,6 @@
     <title>Test-webpack</title>
   </head>
   <body>
-    <div class="jumbotron">
-    <h1>Hello World</h1>
-    <h3>This program contains examples of webpack, jasmine, carma, imports and exports</h3>
-    </div>
-    <h2><a href="example.html">Example</a></h2>
-
-
     <form id="form">
       <div class="container">
         <h1>Galactic Age Calculator</h1>
@@ -39,11 +32,14 @@
         <div class="year">
           <label for="year">Year</label>
           <input type="number" id="year">
-
+        </div>
+        <div class="yearsLeft">
+          <label for="left">How many years do you expect to live for on Earth?</label>
+          <input type="number" id="leftToLive">
         </div>
       </div>
       <button type="submit" name="button">Submit!</button>
-
     </form>
+    <p id="info"></p>
   </body>
 </html>
