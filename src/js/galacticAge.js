@@ -44,7 +44,7 @@ export class Age {
   }
 
 
-  report(array, life) {
+  report(array) {
     const planets = ["Mercury", "Venus", "Mars", "Jupiter"];
     let p = 0;
     let e = 4;
@@ -81,7 +81,8 @@ export class Age {
     for(let i = 0; i < length; i++) {
       array.push(deaths[i]);
     }
-    const report = this.report(array, toLive);
+    console.log(array);
+    const report = this.report(array);
     return report;
   }
 }
